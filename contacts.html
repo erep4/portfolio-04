@@ -224,8 +224,8 @@
           </ul>
         </header>
         <div class="contacts__body">
-          <ul class="list">
-            <li class="list__item">
+          <div class="list">
+            <div class="list__item">
               <div class="card container">
                 <div class="card__preview">
                   <div class="card__preview-main">
@@ -238,16 +238,65 @@
                       loading="lazy"
                     />
                     <div class="card__preview-info">
-                      <h3 class="card__preview-title">
+                      <h2 class="card__preview-title">
                         Get in Touch with AI Podcasts
-                      </h3>
+                      </h2>
                     </div>
                   </div>
                 </div>
-                <div class="card__body"></div>
+                <div class="card__body">
+                  <form action="/" class="feedback-form">
+                    <div class="feedback-form__cell field">
+                      <label for="firstName" class="field__label"
+                        >First Name
+                        <span class="field__required-star" aria-hidden="true"
+                          >*</span
+                        ></label
+                      >
+                      <input
+                        class="field__control"
+                        id="firstName"
+                        placeholder="example Name"
+                        required
+                      />
+                    </div>
+                    <div class="feedback-form__cell field">
+                      <label for="lastName" class="field__label"
+                        >Last Name
+                      </label>
+                      <input
+                        class="field__control"
+                        id="lastName"
+                        placeholder="example Last Name"
+                      />
+                    </div>
+                    <div class="feedback-form__cell field">
+                      <label for="email" class="field__label"
+                        >Email
+                        <span class="field__required-star" aria-hidden="true"
+                          >*</span
+                        ></label
+                      >
+                      <input
+                        class="field__control"
+                        id="email"
+                        placeholder="example@email.com"
+                        required
+                        type="email"
+                      />
+                    </div>
+                    <div class="feedback-form__cell field"></div>
+                    <div
+                      class="feedback-form__cell feedback-form__cell--wide field"
+                    ></div>
+                    <div
+                      class="feedback-form__cell feedback-form__cell--wide"
+                    ></div>
+                  </form>
+                </div>
               </div>
-            </li>
-            <li class="list__item">
+            </div>
+            <div class="list__item">
               <div class="card container">
                 <div class="card__preview">
                   <div class="card__preview-main">
@@ -260,7 +309,7 @@
                       loading="lazy"
                     />
                     <div class="card__preview-info">
-                      <h3 class="card__preview-title">Asked question</h3>
+                      <h2 class="card__preview-title h3">Asked question</h2>
                       <div class="card__preview-description">
                         <p>
                           If the question is not available on our FAQ section,
@@ -268,7 +317,9 @@
                           your respective doubts.
                         </p>
                       </div>
-                      <a href="#" class="question button button--dark-gray"
+                      <a
+                        href="#"
+                        class="card__preview-link button button--dark-gray"
                         ><span class="icon icon--yellow-arrow"
                           >Ask Question</span
                         ></a
@@ -276,10 +327,10 @@
                     </div>
                   </div>
                 </div>
-                <div class="card__body"></div>
+                <div class="card__body">accordion</div>
               </div>
-            </li>
-          </ul>
+            </div>
+          </div>
           <div
             class="tabs__content"
             id="tabpanel-2"
