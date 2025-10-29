@@ -4,6 +4,8 @@
   --columns: 1;
   --itemPaddingY: fluid(80, 40);
 
+  padding-block: var(--itemPaddingY);
+
   display: grid;
   grid-template-columns: repeat(var(--columns), 1fr);
 
@@ -26,14 +28,6 @@
           @include full-vw-centered-line(bottom, auto, 100%, 50%);
           padding-left: var(--itemPaddingX);
         }
-      }
-    }
-
-    @include mobile {
-      --columns: 1;
-
-      .bordered-grid__item:not(:last-child) {
-        border-bottom: var(--border);
       }
     }
   }
@@ -81,7 +75,53 @@
     }
   }
 
-  &__item {
-    padding-block: var(--itemPaddingY);
+  &--4-cols {
+    --columns: 4;
+    --itemPaddingX: #{rem(50)};
+
+    column-gap: calc(var(--itemPaddingX) * 2);
+
+    @include laptop {
+      --itemPaddingX: #{rem(30)};
+    }
+
+    @include tablet {
+      --columns: 2;
+    }
+
+    @include mobile {
+      --columns: 1;
+    }
+
+    .bordered-grid__item {
+      padding-block: var(--itemPaddingY);
+
+      &:nth-child(4n-3),
+      &:nth-child(4n-2),
+      &:nth-child(4n-1) {
+        position: relative;
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: calc(100% + var(--itemPaddingX));
+          width: rem(1);
+          height: 100%;
+          background-color: var(--color-dark-15);
+        }
+      }
+    }
+  }
+
+  &--2-cols,
+  &--4-cols {
+    @include mobile {
+      --columns: 1;
+
+      .bordered-grid__item:not(:last-child) {
+        border-bottom: var(--border);
+      }
+    }
   }
 }

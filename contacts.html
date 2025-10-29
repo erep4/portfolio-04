@@ -146,7 +146,7 @@
               <div class="contacts-card">
                 <h2 class="contacts-card__title h6">Connect with Us</h2>
                 <div class="contacts-card__body">
-                  <div class="soc1als">
+                  <div class="soc1als soc1als--3-cols">
                     <ul class="soc1als__list">
                       <li class="soc1als__item">
                         <a
@@ -285,13 +285,59 @@
                         type="email"
                       />
                     </div>
-                    <div class="feedback-form__cell field"></div>
+                    <div class="feedback-form__cell field">
+                      <label class="field__label" for="phoneNumber"
+                        >Phone Number</label
+                      >
+                      <div class="field__body">
+                        <div class="select">SELECT</div>
+                        <input
+                          class="field__control"
+                          id="phoneNumber"
+                          placeholder="(999) 999-99-99"
+                        />
+                      </div>
+                    </div>
                     <div
                       class="feedback-form__cell feedback-form__cell--wide field"
-                    ></div>
-                    <div
-                      class="feedback-form__cell feedback-form__cell--wide"
-                    ></div>
+                    >
+                      <label for="message" class="field__label"
+                        >Message<span
+                          class="field__required-star"
+                          aria-hidden="true"
+                          >*</span
+                        ></label
+                      >
+                      <textarea
+                        id="message"
+                        class="field__control"
+                        placeholder="example message"
+                        required
+                      ></textarea>
+                    </div>
+                    <div class="feedback-form__cell feedback-form__cell--wide">
+                      <div class="feedback-form__actions">
+                        <div class="feedback-form__agreement">
+                          <label class="checkbox"
+                            ><input
+                              type="checkbox"
+                              class="checkbox__input"
+                              required
+                            />
+                            <span class="checkbox__label"
+                              >I agree with Terms of Use and Privacy
+                              Policy</span
+                            >
+                          </label>
+                        </div>
+                        <button
+                          class="feedback-form__submit-button button button--accent"
+                          type="submit"
+                        >
+                          Send
+                        </button>
+                      </div>
+                    </div>
                   </form>
                 </div>
               </div>
@@ -327,29 +373,147 @@
                     </div>
                   </div>
                 </div>
-                <div class="card__body">accordion</div>
+                <div class="card__body">
+                  <div class="accordion-group">
+                    <div class="accordion tile">
+                      <details class="accordion__details" name="faq" open>
+                        <summary class="accordion__summary">
+                          <h4 class="accordion__title h6">
+                            <span role="term" aria-details="faq-1"
+                              >What is AI?</span
+                            >
+                          </h4>
+                        </summary>
+                      </details>
+                      <div
+                        class="accordion__content"
+                        id="faq-1"
+                        role="definition"
+                      >
+                        <div class="accordion__content-inner">
+                          <div class="accordion__content-body">
+                            <p>
+                              AI stands for Artificial Intelligence, which
+                              refers to the simulation of human intelligence in
+                              machines. It enables them to perform tasks like
+                              problem-solving, learning, and decision-making.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion tile">
+                      <details class="accordion__details" name="faq">
+                        <summary class="accordion__summary">
+                          <h4 class="accordion__title h6">
+                            <span role="term" aria-details="faq-2"
+                              >How can I listen to your podcasts?</span
+                            >
+                          </h4>
+                        </summary>
+                      </details>
+                      <div
+                        class="accordion__content"
+                        id="faq-2"
+                        role="definition"
+                      >
+                        <div class="accordion__content-inner">
+                          <div class="accordion__content-body">
+                            <p>
+                              AI stands for Artificial Intelligence, which
+                              refers to the simulation of human intelligence in
+                              machines. It enables them to perform tasks like
+                              problem-solving, learning, and decision-making.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion tile">
+                      <details class="accordion__details" name="faq">
+                        <summary class="accordion__summary">
+                          <h4 class="accordion__title h6">
+                            <span role="term" aria-details="faq-3"
+                              >Are your podcasts free to listen to?</span
+                            >
+                          </h4>
+                        </summary>
+                      </details>
+                      <div
+                        class="accordion__content"
+                        id="faq-3"
+                        role="definition"
+                      >
+                        <div class="accordion__content-inner">
+                          <div class="accordion__content-body">
+                            <p>
+                              AI stands for Artificial Intelligence, which
+                              refers to the simulation of human intelligence in
+                              machines. It enables them to perform tasks like
+                              problem-solving, learning, and decision-making.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion tile">
+                      <details class="accordion__details" name="faq">
+                        <summary class="accordion__summary">
+                          <h4 class="accordion__title h6">
+                            <span role="term" aria-details="faq-4"
+                              >Can I download episodes to listen offline?</span
+                            >
+                          </h4>
+                        </summary>
+                      </details>
+                      <div
+                        class="accordion__content"
+                        id="faq-4"
+                        role="definition"
+                      >
+                        <div class="accordion__content-inner">
+                          <div class="accordion__content-body">
+                            <p>
+                              AI stands for Artificial Intelligence, which
+                              refers to the simulation of human intelligence in
+                              machines. It enables them to perform tasks like
+                              problem-solving, learning, and decision-making.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion tile">
+                      <details class="accordion__details" name="faq">
+                        <summary class="accordion__summary">
+                          <h4 class="accordion__title h6">
+                            <span role="term" aria-details="faq-5"
+                              >How often do you release new episodes?</span
+                            >
+                          </h4>
+                        </summary>
+                      </details>
+                      <div
+                        class="accordion__content"
+                        id="faq-5"
+                        role="definition"
+                      >
+                        <div class="accordion__content-inner">
+                          <div class="accordion__content-body">
+                            <p>
+                              AI stands for Artificial Intelligence, which
+                              refers to the simulation of human intelligence in
+                              machines. It enables them to perform tasks like
+                              problem-solving, learning, and decision-making.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <div
-            class="tabs__content"
-            id="tabpanel-2"
-            aria-labelledby="tab-2"
-            tabindex="0"
-            data-js-tabs-content
-          >
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Cupiditate, perspiciatis!
-          </div>
-          <div
-            class="tabs__content"
-            id="tabpanel-3"
-            aria-labelledby="tab-3"
-            tabindex="0"
-            data-js-tabs-content
-          >
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Cupiditate, perspiciatis!
           </div>
         </div>
       </section>

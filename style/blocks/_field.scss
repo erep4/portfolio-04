@@ -1,0 +1,16 @@
+@use "../helpers" as *;
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  row-gap: rem(16);
+  font-style: rem(18);
+  font-weight: 500;
+  color: var(--color-light);
+
+  @include laptop {
+    row-gap: rem(12);
+    font-style: rem(16);
+  }
+}
