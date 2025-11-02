@@ -41,7 +41,7 @@
     }
 
     &::after {
-      content: "🗸";
+      content: "✔";
       color: var(--color-light);
       transition-duration: var(--transition-duration);
     }
