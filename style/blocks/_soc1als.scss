@@ -54,5 +54,9 @@
     @include laptop {
       --size: #{rem(20)};
     }
+
+    @include hover {
+      border-color: var(--color-accent);
+    }
   }
 }

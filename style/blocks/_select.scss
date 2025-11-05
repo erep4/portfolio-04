@@ -2,6 +2,7 @@
 
 .select {
   &__original-control {
+    min-width: rem(100);
     @include mobile-above {
       @include visually-hidden;
     }
