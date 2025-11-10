@@ -2732,9 +2732,4 @@ button[aria-label]::before {
 .contacts__header {
   border-bottom: var(--border);
 }
-
-.header,
-main > *:not(:last-child),
-footer {
-  display: none !important;
-}/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main.css.map */
